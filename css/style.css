@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imglogo {
+    height: 70px;
+    width: auto;
+    border-radius: 40px;
+}
+
+nav li {
+    font-size: 24px;
+}
+
+body {
+    background-color: #8B8B8B;
+}
+
+.min-vh-600 {
+    min-height: 600px;
+}
+
+.vh-middle {
+    position: relative;
+    top: 33%;
+  }
+
+  .bg-red {
+    background-color: #C1414F;
+  }
+
+.ptb-40 {
+    padding: 40px 0; 
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.h-100x {
+    height: 100px;
+}
+
+.margin-12 {
+    margin: 12px 0px;
+}
