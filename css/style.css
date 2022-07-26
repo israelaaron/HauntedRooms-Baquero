@@ -11,7 +11,7 @@
 
 nav li {
     font-size: 1.75rem;
-    margin-left: rem;
+    margin-left: 2rem;
 }
 
 body {
@@ -114,6 +114,10 @@ p {
         text-shadow: 0 4px 8px #555;
         border-bottom: 1px solid rgba(235, 235, 235, 0.171);
         border-top: 1px solid rgba(235, 235, 235, 0.171);
+    }
+
+    #gcimg {
+        width: 540px;
     }
 
     @media  screen and (max-width: 768px) {
