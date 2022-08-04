@@ -1,3 +1,15 @@
+$colors: (
+    dark: #555,
+    dark-light: #8B8B8B,
+    light-red:  #C1414F
+);
+
+@mixin logo-text-style {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +27,7 @@ nav li {
 }
 
 body {
-    background-color: #8B8B8B;
+    background-color: map-get($colors, dark-light);
 }
 
 .min-vh-600 {
@@ -27,9 +39,9 @@ body {
     top: 33%;
   }
 
-  .bg-red {
-    background-color: #C1414F;
-  }
+.bg-red {
+    background-color: map-get($colors, light-red);
+}
 
 .ptb-40 {
     padding: 40px 0; 
@@ -49,9 +61,7 @@ body {
 }
 
 #titletype {
-    font-family: 'Amatic SC', cursive;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
+    @include logo-text-style;
     border-left: solid 1px rgba(255, 255, 255, 0.1);
     padding-left: 1.75rem;
 }
@@ -98,6 +108,48 @@ p {
     border-left: solid 1px #ac000050;
 }
 
+.image {
+overflow: hidden;
+position: relative;
+cursor: pointer;
+box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
+transition: 200ms;
+background-color: map-get($colors, dark);
+
+    img {
+        transition: 500ms;
+        width: 100%;
+    }
+
+    &:hover {
+
+        &:after {
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            transform: scale(1.4);
+        }
+    }
+
+    &:after{
+        @extend .min-vh-600;
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 40%;
+        width: 600px;
+        height: 600px;
+        transform: translate(-140%, -50%);
+        background-color: rgba(180, 180, 180, 0.342);
+        opacity: 0.8;
+        border-radius: 50%;
+        transition: 300ms;
+    }
+
+}
+
 @media  screen and (max-width: 768px) {
     .vh-middle {
         position: unset;
@@ -118,44 +170,3 @@ p {
     }
 }
 
-.image {
-
-overflow: hidden;
-position: relative;
-cursor: pointer;
-box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
-transition: 200ms;
-background-color: #555;
-
-    img {
-        transition: 500ms;
-        width: 100%;
-    }
-
-    &:hover {
-
-        &:after {
-            transform: translate(-50%, -50%);
-        }
-
-        img {
-            transform: scale(1.4);
-        }
-    }
-
-    &:after{
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        left: 40%;
-        width: 600px;
-        height: 600px;
-        transform: translate(-140%, -50%);
-        background-color: rgba(180, 180, 180, 0.342);
-        opacity: 0.8;
-        border-radius: 50%;
-        transition: 300ms;
-    }
-
-}

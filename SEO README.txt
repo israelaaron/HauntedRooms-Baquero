@@ -1,0 +1,2 @@
+    <meta name="description" content="Fun and adrenaline in our new terrifying rooms"> /* Aca se uso una descripcion simple pero bastante especifica de lo que se trata la idea del proyecto */
+    <meta name="keywords" content="ROOMS, ESCAPE, ESCAPE ROOMS, ESCAPE GAMES, ENTERTAINMENT, TOP ENTERTAINMENT, FRIENDS, ACTIVITIES WITH FRIENDS, HANGING OUT, ENTERTAINMENT TRENDING"> /* Palabras clave que usualmente las personas usarian al buscar cotidianamente todo tipo de actividades de entretenimiento, adrenalina y terror. 
