@@ -44,12 +44,24 @@ body {
   border-left: solid 1px rgba(255, 255, 255, 0.1);
   padding-left: 1.75rem; }
 
+.pt-40 {
+  padding-top: 40px; }
+
 h2 {
   font-family: 'Kdam Thmor Pro', sans-serif;
   letter-spacing: 0.15rem; }
 
+h3.question {
+  border-top: 2px solid #ac000070;
+  padding-top: 1.5rem; }
+
 p {
   font-family: 'Dongle', sans-serif; }
+  p.answer {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem; }
+  p.reward-item {
+    padding: 2rem; }
 
 .gctxt {
   padding-top: 6rem; }
